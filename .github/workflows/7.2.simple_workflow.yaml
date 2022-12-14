@@ -7,4 +7,4 @@ jobs:
       # loads our repository since our action is inside it​
       - uses: actions/checkout@v3
       # calls the action using the path to its folder​
-      - uses: .github/hello-world
+      - uses: ./.github/hello-world
