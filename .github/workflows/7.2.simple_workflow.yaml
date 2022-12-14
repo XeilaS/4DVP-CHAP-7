@@ -2,7 +2,7 @@ on:
   push:
 jobs:
   debug:
-    runs-on: [self-hosted, Linux, x64]
+    runs-on: ubuntu-latest
     steps:
       # loads our repository since our action is inside it​
       - uses: actions/checkout@v3
