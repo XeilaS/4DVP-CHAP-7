@@ -1,0 +1,10 @@
+on:
+  push:
+jobs:
+  debug:
+    runs-on: [self-hosted, Linux, x64]
+    steps:
+      # loads our repository since our action is inside it​
+      - uses: actions/checkout@v3
+      # calls the action using the path to its folder​
+      - uses: ./.github/hello-world/action
